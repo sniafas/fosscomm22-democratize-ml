@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fosscomm22-democratizing-ml-hf"
+version = "0.1"
+description = ""
+authors = ["Stavros Niafas"]
+license = "GNU GPL v3"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = [
+  {url = "https://download.pytorch.org/whl/cpu/torch-1.13.0%2Bcpu-cp38-cp38-linux_x86_64.whl", markers = "sys_platform == 'linux'"},
+]
+transformers = "*"
+datasets = "*"
+sentencepiece = "*"
+pillow = "*"
+timm = "*"
+matplotlib = "*"
+jupyterlab = "*"
+skops = "*"
+scikit-learn = "*"
+
+
+[tool.poetry.dev-dependencies]
+flake8 = "^5.0.4"
+black = {version = "^22.10.0", allow-prereleases = true}
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
